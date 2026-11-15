@@ -18,14 +18,20 @@ This is a development preview, not yet a relocatable store package. Some inactiv
 
 Copyright (c) 2026 Jeremiah O'Neal.
 
-Original source in this release is offered under the Apache License,
-Version 2.0, subject to applicable third-party notices.
+Original source in this release is licensed under the
+GNU General Public License version 3 (GPL-3.0-only),
+subject to applicable third-party notices.
 
-The earlier MIT release remains available under the v0.7.9-mit tag.
-Its original license and copyright notice are preserved in LICENSES/MIT.txt.
+Previous licensing milestones remain available:
 
-Qt, OpenSSL and multimedia dependencies retain their own licenses.
-No dependency binaries are included.
+- v0.7.9-mit: MIT License
+- v0.7.9-apache2: Apache License 2.0
+
+Previous license documents and copyright notices
+are preserved in the LICENSES directory.
+
+Qt, OpenSSL and multimedia dependencies retain
+their own licenses. No dependency binaries are included.
 
 The preview screenshot is provided separately as documentation.
 
