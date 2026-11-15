@@ -1,40 +1,71 @@
-# AncesTale-final 0.7.9 — offline preview
+# AncesTale-final
 
-An experimental Qt/C++ desktop interface for AI-assisted genealogy and historical storytelling. This preview displays fictional sample records and retains the original workflow panels. External integrations are disabled; signing, live multiplayer, voice, media, server deployment and AI automation are not included as working public features.
+**Version 0.7.9 Developer Preview**
 
-## Build
-
-Requires CMake 3.21+, C++17, Qt 6 Widgets, Network and Multimedia, and OpenSSL Crypto. Use an in-source-tree build directory (not the source root):
-
-```sh
-cmake -S . -B build/preview
-cmake --build build/preview --parallel 2
-./build/preview/AncesTale-final
-```
-
-This is a development preview, not yet a relocatable store package. Some inactive integration code retains development paths; do not enable these integrations. No private genealogy database, credentials, media, signing keys or server scripts are distributed in this preview.
-
-## License
-
-Copyright (c) 2026 Jeremiah O'Neal.
-
-Original source in this release is licensed under the
-GNU General Public License version 3 (GPL-3.0-only),
-subject to applicable third-party notices.
-
-Previous licensing milestones remain available:
-
-- v0.7.9-mit: MIT License
-- v0.7.9-apache2: Apache License 2.0
-
-Previous license documents and copyright notices
-are preserved in the LICENSES directory.
-
-Qt, OpenSSL and multimedia dependencies retain
-their own licenses. No dependency binaries are included.
-
-The preview screenshot is provided separately as documentation.
+AncesTale-final is an open-source desktop application exploring genealogy and interactive historical storytelling. Developed by Jeremiah Burke O'Neal using C++ and Qt 6.
 
 ## Screenshot
 
-![Offline preview](docs/screenshot.png)
+![AncesTale-final](docs/screenshot.png)
+
+## About this preview
+
+- Genealogy and historical storytelling interface
+- Fictional sample family records
+- Offline desktop environment
+- Snap and Flatpak packaging for x86-64 Linux
+
+External integrations are disabled. Signing, live multiplayer, voice, server deployment and AI automation are not working public features in this preview. Installation and launch have been tested; multimedia playback remains unverified.
+
+## Install using Snap
+
+```sh
+sudo snap install ancestale-final --edge
+```
+
+[Snap Store](https://snapcraft.io/ancestale-final)
+
+## Install using Flatpak
+
+Download the bundle from the [GitHub release](https://github.com/we6jbo/AncesTale-final/releases/tag/v0.7.9-preview).
+
+```sh
+flatpak install --user --bundle ancestale-final_0.7.9_x86_64.flatpak
+flatpak run io.github.we6jbo.AncesTaleFinal
+```
+
+Requires the KDE 6.11 runtime. Flathub publication is deferred.
+
+## Build from source
+
+Requires CMake, a C++17 compiler, Qt 6 (Widgets, Network, Multimedia), and OpenSSL development libraries.
+
+```sh
+git clone https://github.com/we6jbo/AncesTale-final.git
+cd AncesTale-final
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --parallel 2
+./build/AncesTale-final
+```
+
+## License
+
+The current edition is distributed under GPL-3.0-only. Earlier source editions remain available under their respective tags: `v0.7.9-mit`, `v0.7.9-apache2`, and `v0.7.9-gpl3`.
+
+Previous license documents and copyright notices are preserved in the LICENSES directory.
+
+Qt, OpenSSL and multimedia dependencies retain their respective licenses and applicable third-party notices.
+
+## Development blog
+
+[AncesTale-final Goes Public](https://j03.page/2026/11/15/ancestale-final-goes-public/) (forthcoming; URL provisional).
+
+## Download verification
+
+Download both packages and `SHA256SUMS.txt` from the GitHub release into the same directory, then run:
+
+```sh
+sha256sum -c SHA256SUMS.txt
+```
+
+Copyright 2026 Jeremiah Burke O'Neal.
