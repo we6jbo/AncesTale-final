@@ -16,7 +16,18 @@ This is a development preview, not yet a relocatable store package. Some inactiv
 
 ## License
 
-Original source in this release is offered under MIT, subject to applicable third-party notices. Qt, OpenSSL and multimedia dependencies retain their own licenses; no dependency binaries are included. The preview screenshot is provided separately as documentation, not as a license grant for unrelated assets.
+Copyright (c) 2026 Jeremiah O'Neal.
+
+Original source in this release is offered under the Apache License,
+Version 2.0, subject to applicable third-party notices.
+
+The earlier MIT release remains available under the v0.7.9-mit tag.
+Its original license and copyright notice are preserved in LICENSES/MIT.txt.
+
+Qt, OpenSSL and multimedia dependencies retain their own licenses.
+No dependency binaries are included.
+
+The preview screenshot is provided separately as documentation.
 
 ## Screenshot
 
