@@ -1,0 +1,35 @@
+name: ancestale-final
+base: core24
+version: '0.7.9'
+summary: Genealogy and historical storytelling
+description: |
+  AncesTale-final is an open-source developer preview
+  exploring interactive genealogy and historical storytelling.
+  This edition includes fictional sample family records
+  and an offline desktop interface.
+grade: devel
+confinement: strict
+license: GPL-3.0-only
+icon: packaging/io.github.we6jbo.AncesTaleFinal.svg
+
+apps:
+  ancestale-final:
+    command: usr/bin/AncesTale-final
+    extensions:
+      - kde-neon-6
+    desktop: usr/share/applications/io.github.we6jbo.AncesTaleFinal.desktop
+    plugs:
+      - audio-playback
+
+parts:
+  ancestale-final:
+    plugin: cmake
+    source: .
+    build-packages:
+      - libssl-dev
+      - libpulse-dev
+    cmake-parameters:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_INSTALL_PREFIX=/usr
+      - >-
+        -DCMAKE_EXE_LINKER_FLAGS=-Wl,-rpath-link,/snap/kde-qt6-core24-sdk/current/usr/lib/x86_64-linux-gnu/pulseaudio -Wl,-rpath-link,/usr/lib/x86_64-linux-gnu/pulseaudio

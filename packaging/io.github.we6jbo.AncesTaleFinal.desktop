@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=AncesTale-final
+Comment=Genealogy and historical storytelling developer preview
+Exec=AncesTale-final
+Icon=io.github.we6jbo.AncesTaleFinal
+Terminal=false
+Type=Application
+Categories=Education;Game;

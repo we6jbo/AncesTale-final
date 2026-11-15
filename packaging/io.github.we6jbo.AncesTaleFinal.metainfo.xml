@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.we6jbo.AncesTaleFinal</id>
+  <name>AncesTale-final</name>
+  <summary>Explore genealogy and historical storytelling</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <developer id="io.github.we6jbo">
+    <name>Jeremiah O'Neal</name>
+  </developer>
+  <description>
+    <p>AncesTale-final explores interactive genealogy
+    and historical storytelling through a desktop interface.</p>
+    <p>This developer preview contains fictional sample
+    family records and operates offline. Some integrations
+    are disabled in this edition.</p>
+  </description>
+  <launchable type="desktop-id">io.github.we6jbo.AncesTaleFinal.desktop</launchable>
+  <url type="homepage">https://github.com/we6jbo/AncesTale-final</url>
+  <url type="bugtracker">https://github.com/we6jbo/AncesTale-final/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>AncesTale-final desktop interface</caption>
+      <image>https://raw.githubusercontent.com/we6jbo/AncesTale-final/322a1f7ba47975cbe1163f47a98aace9a98cb605/docs/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.7.9" date="2026-11-15"
+             type="development"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>
